@@ -75,7 +75,5 @@ if __name__ == "__main__":
     predictions = svc.predict(test_sample)
     print("Colors predicted!")
     colors = kmeans.cluster_centers_.astype("uint8")[predictions]
-    print(predictions)
-    print(svc.classes_)
 
     imf.display_end_result(colored_img, gray_img, colors)
