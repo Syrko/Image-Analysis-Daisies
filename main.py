@@ -3,15 +3,12 @@ import colorspace_discretization as csd
 import slic_superpixels as ssp
 import extract_features as ef
 import svm
-import dataset_management
 from os import path
 import numpy as np
 
 if __name__ == "__main__":
     import warnings
     warnings.filterwarnings("ignore")
-
-    dataset_management.download_dataset()
 
     SUPERPIXELS_NUM = 100
     TESTING_IMAGE = "Dataset\\Testing.png"
